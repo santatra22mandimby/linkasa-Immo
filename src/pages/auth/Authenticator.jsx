@@ -20,7 +20,7 @@ class Authenticator extends Component {
                         </div>
                        
                         <button className="w-xs btn-blue mt-8" type="submit"> Se connecter </button>
-                        <span className="mt-5">ou se connecter avec</span>
+                        <a className="mt-5">ou se connecter avec</a>
                     </div>
                 </div>
             </>
