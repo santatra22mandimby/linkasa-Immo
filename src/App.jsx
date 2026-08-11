@@ -173,20 +173,7 @@ class App extends Component {
           updateName={event => this.handleChange(event, id)}
         />
       ))
-
-    const showListeLCD = Object.keys(listLCD)
-      .map(idL => (
-        <CardLCD
-          key={idL}
-          name={listLCD[idL].name}
-          image={listLCD[idL].image}
-          avis={listLCD[idL].review}
-          ville={listLCD[idL].ville}
-          startPrice={listLCD[idL].startPrice}
-          star={listLCD[idL].star}
-        />
-      ))
-
+      
     return (
       <>
         
