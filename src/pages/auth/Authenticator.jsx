@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faEye, faEyeSlash, faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons"
 import './Authenticator.css'
 
 class Authenticator extends Component {
@@ -20,7 +21,15 @@ class Authenticator extends Component {
                         </div>
                        
                         <button className="w-xs btn-blue mt-8" type="submit"> Se connecter </button>
-                        <a className="mt-5">ou se connecter avec</a>
+                        <div className="flex place-content-center items-center justify-between mt-8">
+                            <span className="w-1/5 border-b-2"></span>
+                            <a className="" href="">ou se connecter avec</a>
+                            <span className="w-1/5 border-b-2"></span>
+                        </div>
+                        <div className="flex justify-center gap-5 mt-8">
+                            <FontAwesomeIcon icon={faFacebook} size="3x" />
+                            <FontAwesomeIcon icon={faGoogle} size="3x" />
+                        </div>
                     </div>
                 </div>
             </>
