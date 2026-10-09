@@ -2,6 +2,7 @@ import { Component } from "react";
 import CardLCD from "../components/CardLCD/CardLCD";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faAngleLeft, faAngleRight, faLocationDot, faStarHalf, faStar } from '@fortawesome/free-solid-svg-icons'
+import Menuhome from "../features/Menuhome";
 
 const listLCD = {
     home1: {
@@ -101,8 +102,12 @@ class Home extends Component {
 
         return (
             <>
+                {/* menu */}
+                { <Menuhome/> }
+
                 {/* section-body-1 */}
                 <div className='section-body-1 min-h-175 max-lg:min-h-auto columns-2 flex flex-nowrap max-lg:flex-col px-10 py-10 lg:pb-30 gap-10 max-lg:gap-0 max-lg:py-10 max-lg:px-10 max-md:px-4'>
+                    
                     <div className='w-2/5 max-lg:w-full place-content-end'>
                         <h1 className='text-start leading-none text-shadow-md text-[130px] max-lg:text-[100px] max-sm:text-[70px] font-bold text-[#ffffffc4]'>
                             Linkasa Immo

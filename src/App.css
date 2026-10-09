@@ -10,8 +10,12 @@ h2,
 h3,
 h4,
 h5,
-h6, p, span, input, button {
+h6, p, span, input, button, li {
   font-family: "Urbanist", sans-serif;
+}
+
+a, a:hover {
+  color: inherit;
 }
 
 input:focus {
